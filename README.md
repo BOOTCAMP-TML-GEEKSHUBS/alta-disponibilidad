@@ -4,7 +4,7 @@
 
 
 ```
-Fecha: 18 y 19 de febrero de 2020
+Fecha: 18 y 19 de febrero de 2022
 Profesor: David Pestana
 Horas: 10
 ```
