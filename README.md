@@ -1,13 +1,25 @@
 ![](https://github.com/GEEKSHUBS-DEVOPS2020/trabajando-con-contenedores/blob/master/logo.png?raw=true)
 
-# Alta Disponibilidad
-
+# Escalabilidad
 
 ```
-Fecha: 18 y 19 de febrero de 2022
+Fecha: 27 y 28 de mayo de 2022
 Profesor: David Pestana
 Horas: 10
 ```
+
+## CONCEPTOS A DESARROLLAR
+ * Deuda técnica frente a sobre ingenieria.
+ * Implantación de herramientas.
+ * Stack tecnologico.
+ * Adquisicion de talento y setup.
+ * Infraestructura.
+ * Procesos.
+ * Negocio - Desarrollo - Operaciones
+
+https://github.com/BOOTCAMP-TML-GEEKSHUBS/alta-disponibilidad/blob/master/ESCALABILIDAD-VIABILIDAD.pdf
+
+# Alta Disponibilidad
 
 En esta unidad vamos a trabajar con diferentes técnicas para lograr **Alta Disponibilidad** (*HA*) en nuestros entornos de producción. Teniendo en cuenta que HA no solo es poder ofrecer un servicio continuado y sin cortes el 100% del tiempo si no que también es garantizar una **Calidad de Servicio** (*QoS*) dentro de unos parámetros durante todo este tiempo, sea cual sea el escenario.
 
@@ -149,16 +161,11 @@ Cabe notar que las técnicas de auto escalado no estarán disponibles ya que la 
 * BlueMix
 
 
-> Practica:  AWS Auto Scaling
+Practica: AWS Auto Scaling sin usar kubernetes ( de momento )
 
-instalar docker en imagen EC2 
-https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+instalar docker en imagen EC2 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
 
-añadir script start.sh
-https://github.com/GEEKSHUBS-DEVOPS2020/alta-disponibilidad/blob/master/start.sh
-
-    
-
+añadir script start.sh https://github.com/GEEKSHUBS-DEVOPS2020/alta-disponibilidad/blob/master/start.sh
 
 # Kubernetes, cluster autoescalado.
 
@@ -176,9 +183,9 @@ producto de Digital Ocean, que nos provee un cluster de K8S preconfigurado aunqu
 
 
 ## práctica: HPA ( Horizontal Pod Autoscaler )
-efectuando esta practica sobre microk8s (utilizado en otras clases ) entenderemos los mecanismos por los cuales K8S gestiona la movilidad de los pods a través de los nodos, agregando o eliminando pods según los criterios configurados y la necesidad en cada instante.
+En la documentación oficial de Kubernetes encontraremos una interesante practica de HPA que nos ayudará a comprender sus fundamentos, efectuando esta practica sobre minikube (utilizado en otras clases ) entenderemos los mecanismos por los cuales K8S gestiona la movilidad de los pods a través de los nodos, agregando o eliminando pods según los criterios configurados y la necesidad en cada instante.
 [https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
-> deplegar en el cluster movies-api con HPA
+> ahora podriamos tratar de desplegar en nuestro cluster movies-api con HPA y estudiar su comportamiento.
 
 ## práctica: CA ( Cluster Autoscaler)
 esta practica requiere mucho tiempo, pero iremos avanzando hasta donde sea posible
@@ -190,3 +197,4 @@ esta practica requiere mucho tiempo, pero iremos avanzando hasta donde sea posib
 * instalamos en nuestro cluster los servicios de Cluster Autoescaler y definimos los permisos en nuestro proveedor de IaaS
 	* [https://aws-autoscaling.github.io/kops/](https://aws-autoscaling.github.io/kops/)
 * en el repositorio que usamos para la practica con Locust, puedes encontrar el despliegue para subir a nuestro cluster K8S el API MOVIES y poder testear con Locust como nuestro cluster escala y desescala sus nodos.
+
