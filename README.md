@@ -198,3 +198,9 @@ esta practica requiere mucho tiempo, pero iremos avanzando hasta donde sea posib
 	* [https://aws-autoscaling.github.io/kops/](https://aws-autoscaling.github.io/kops/)
 * en el repositorio que usamos para la practica con Locust, puedes encontrar el despliegue para subir a nuestro cluster K8S el API MOVIES y poder testear con Locust como nuestro cluster escala y desescala sus nodos.
 
+# AUTOMATIZACION
+ * Pipelines ( github Actions )
+ * GitOps (Flux)
+ * Patrón de Operadores
+ * Auto Discovery
+
